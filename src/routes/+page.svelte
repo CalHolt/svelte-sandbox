@@ -7,9 +7,12 @@
   // rendering html content
   let hello = "<span>is this working?</span>";
 
-
+  let messsageForBox = {
+    title: "generated from object",
+    description: "I have rendered this cards text from an object"
+  }
 </script>
-<ul>
+<ul class="m-4 text-center">
   <li class="text-sky-500">
       <a href="/gallery">Gallery</a>
   </li>
@@ -25,4 +28,7 @@
 <!-- attach component to page -->
 <!-- Creating differnt cards -->
 <MessageBox title="Wow this is cool" description="the description would go here"/>
+<!-- writing out each title and description  -->
 <MessageBox title="differen box title?" description="this is its own seperate card"/>
+<!-- using a made variable to fast track text -->
+<MessageBox title = {messsageForBox.title} description = {messsageForBox.description}/>
