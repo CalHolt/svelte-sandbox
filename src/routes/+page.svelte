@@ -1,3 +1,9 @@
+<script>
+
+  // Getting rid of document.querySelector
+  let test = "testing";
+
+</script>
 <ul>
   <li>
     <a href="/">Home</a>
@@ -11,5 +17,6 @@
     <a href="/contact">Contact</a>
   </li>
 </ul>
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<!-- attach the variable directly to the html -->
+<h1>SvelteKit Sandbox {test}</h1>
+
