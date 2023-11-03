@@ -23,12 +23,17 @@
     <a href="/contact">Contact</a>
   </li>
 </ul>
+
 <!-- attach the variable directly to the html -->
 <h1>SvelteKit Sandbox {@html hello}</h1>
-<!-- attach component to page -->
+
+<!-- Adding components into the page -->
+
 <!-- Creating differnt cards -->
 <MessageBox title="Wow this is cool" description="the description would go here"/>
 <!-- writing out each title and description  -->
 <MessageBox title="differen box title?" description="this is its own seperate card"/>
 <!-- using a made variable to fast track text -->
 <MessageBox title = {messsageForBox.title} description = {messsageForBox.description}/>
+<!-- Cleanest way to render text to the component using spread operator -->
+<MessageBox {...messsageForBox}/>
