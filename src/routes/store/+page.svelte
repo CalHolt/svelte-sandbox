@@ -15,7 +15,7 @@
   <ul class="list-disc m-4">
     <!-- each loop -->
     {#each listItems as item, i}
-    <ListItem>{item}</ListItem>
+    <ListItem bgColor="bg-purple-300">{item}</ListItem>
     {/each}
   </ul>
 </section>
@@ -25,7 +25,8 @@
   <ul>
     <!-- destructured the list to cut down on code -->
     {#each secondList as {name, species}}
-    <ListItem>{name} is yo {species}</ListItem>
+    <!-- selecting our component and also giving it a unique bg color -->
+    <ListItem bgColor = "bg-blue-300">{name} is yo {species}</ListItem>
     {/each}
   </ul>
 </section>
