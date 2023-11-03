@@ -1,6 +1,6 @@
 <script>
   // import component
-    import MessageBox from "../lib/components/MessageBox.svelte";
+    import MessageBox from "../lib/components/messageBox.svelte";
   // Getting rid of document.querySelector
   let test = "testing";
 
