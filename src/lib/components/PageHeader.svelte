@@ -1,9 +1,10 @@
 <script>
 export let pageTitle;
 export let pageDescription;
+export let bgColor;
 </script>
 <!-- Header -->
-<header class=" bg-blue-200 p-8 text-center">
+<header class={`${bgColor} p-8 text-center`}>
 <!-- Title -->
   <h1 class=" text-3xl lg:text-5xl font-semibold">{pageTitle}</h1>
 
