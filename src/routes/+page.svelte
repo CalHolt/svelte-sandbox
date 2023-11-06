@@ -1,6 +1,16 @@
 <script>
+  // Import header
+  import PageHeader from "../lib/components/PageHeader.svelte";
+
+  let pageTitle = "Home";
+  let pageDescription = "This is my SvelteKit Sandbox";
+
+  // --------------------- //
+  // MessageBox Importing //
+  // --------------------//
+  
   // import component
-    import MessageBox from "../lib/components/messageBox.svelte";
+  import MessageBox from "../lib/components/messageBox.svelte";
 
   // Getting rid of document.querySelector
   let test = "testing";
@@ -14,7 +24,7 @@
     description: "I have rendered this cards text from an object"
   }
 
-  // array to loop through inside of component 
+  // array, to loop through inside of component 
   let messsagesForBox = [{
     title: "generated from array", description: "first looping description"},
     {title: "second title generated from array", description: "did it work how intended?"
@@ -22,10 +32,12 @@
 
 </script>
 
-
+<PageHeader {pageTitle} {pageDescription}/>
 
 <!-- attach the variable directly to the html -->
-<h1>SvelteKit Sandbox {@html hello}</h1>
+
+<!-- <h1>SvelteKit Sandbox {@html hello}</h1> -->
+
 
 <!-- Adding components into the page -->
 

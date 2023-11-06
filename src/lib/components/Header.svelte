@@ -1,11 +1,8 @@
 <script>
-  const navItems = [
-    { name: "Store", href: "/store"},
-    { name: "Gallery", href: "/gallery"}
-  ]
+  
 </script>
-<header class="bg-black flex justify-between p-">
-  <div class="text-white">logo</div>
+<header class="bg-black flex justify-between p-2">
+  <div class="text-white"> <a href="/">Logo</a></div>
   <nav>
     <ul class="flex justify-around gap-4">
       <li class="text-sky-500">

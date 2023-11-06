@@ -14,7 +14,7 @@
   <h2 class="text-xl">Example list</h2>
   <ul class="list-disc m-4">
     <!-- each loop -->
-    {#each listItems as item, i}
+    {#each listItems as item}
     <ListItem bgColor="bg-purple-300">{item}</ListItem>
     {/each}
   </ul>
